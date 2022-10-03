@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+:root{ 
+--Red: hsl(1, 90%, 64%);
+--Blue: hsl(219, 85%, 26%);
+--white: hsl(0, 0%, 100%);
+--Very-light-grayish-blue: hsl(210, 60%, 98%);
+--Light-grayish-blue-1: hsl(211, 68%, 94%);
+--Light-grayish-blue-2: hsl(205, 33%, 90%);
+--Grayish-blue: hsl(219, 14%, 63%);
+--Dark-grayish-blue: hsl(219, 12%, 42%);
+--Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    font-family:'Plus Jakarta Sans',sans-serif ;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-light-grayish-blue);
+    font-size: 0.8rem;
+    
+}
+.container{
+    margin: 2rem;
+    width: 800px;
+    background-color: var(--white);
+    padding: 1.5rem 1rem;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.notification{
+    display: flex;
+    align-items:center ;
+}
+#notification{
+    background-color: var(--Blue);
+    margin-left: 1rem;
+    width: 35px;
+    height: 30px;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: 800;
+}
+p{
+    color: var(--Dark-grayish-blue);
+}
+#mark-all{
+    cursor: pointer;
+}
+#mark-all:hover{
+    color: var(--Blue);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.user-notif{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+}
+img{
+   width: 50px;
+}
+.details{
+    margin-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+strong{
+    color: var(--Very-dark-blue);
+    cursor: pointer;
+}
+strong:hover{
+    color: var(--Blue);
+}
+.link:hover{
+ color: var(--Blue);
+}
+.unread-message{
+    background-color:var(--Very-light-grayish-blue);;
+}
+.unread-message p:first-of-type::after{
+    content: "";
+    background-color: var(--Red);
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50px;
+    margin-left: 0.5rem;
+}
+.message{
+    display: flex;
+    align-items: center;
+}
+.message-box{
+padding: 1rem;
+border: 1px solid var(--Light-grayish-blue-2) ;
+border-radius: 5px;
+cursor: pointer;
+margin-left: 5rem;
+
+}
+.message-box:hover{
+    background-color: var(--Light-grayish-blue-1);
+}
+.chess-girl{
+    margin-left: auto;
+}
+
+@media screen and(max-width:550px) {
+    .container{
+        margin: 0;
+    }
+}
